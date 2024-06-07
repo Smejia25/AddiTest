@@ -50,3 +50,5 @@ first install dependencies use your preferred package manager pnpm | yarn | npm 
 then run `pnpm run server` this will start the express server
 
 then with the IOS simulator running run `pnpm run ios`
+
+for running the unit tests run `pnpm run test`
