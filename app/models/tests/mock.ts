@@ -1,0 +1,42 @@
+export const MOCK_LEADS: any = [
+  {
+    firstName: "Harrison",
+    lastName: "Hood",
+    email: "et@google.edu",
+    birthDate: "May 20, 1996",
+    guid: 9481687,
+    url: "https://randomuser.me/api/portraits/men/75.jpg",
+  },
+  {
+    firstName: "Rudyard",
+    lastName: "Finch",
+    email: "sed.sapien@icloud.net",
+    birthDate: "Jul 31, 1997",
+    guid: 3090610,
+    url: "https://randomuser.me/api/portraits/men/78.jpg",
+  },
+  {
+    firstName: "Sigourney",
+    lastName: "Key",
+    email: "semper.tellus.id@hotmail.edu",
+    birthDate: "Jun 17, 1995",
+    guid: 7289488,
+    url: "https://randomuser.me/api/portraits/men/90.jpg",
+  },
+  {
+    firstName: "Malik",
+    lastName: "Greer",
+    email: "sollicitudin.a@google.org",
+    birthDate: "Apr 19, 1998",
+    guid: 7363254,
+    url: "https://randomuser.me/api/portraits/men/90.jpg",
+  },
+  {
+    firstName: "Joshua",
+    lastName: "Parrish",
+    email: "quis.pede@icloud.edu",
+    birthDate: "May 6, 1998",
+    guid: 4268928,
+    url: "https://randomuser.me/api/portraits/men/75.jpg",
+  },
+]
