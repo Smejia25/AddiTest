@@ -7,6 +7,10 @@ Libraries used:
   -FlashList: shopify implementation of list, very easy to implement and very performant with larger lists
 - reanimated: for animations
 
+- unit tested store changes and api calls
+- couldn't write ui test because some config issues that were breaking the build, and didnt have time to address it.
+
+
 ## Quick Start
 
 **components**
