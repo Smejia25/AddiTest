@@ -17,7 +17,7 @@ Libraries used:
 This is where the reusable components live.
 
 **models**
-This is where the app model live. Each model has a directory which will contain the `mobx-state-tree` model file, test file.
+This is where the app model live. Each model has a directory which will contain the `mobx-state-tree` model file, test file, each file has the model definitions and actions.
 
 **screens**
 This is where the main views are. A screen is a component which will take up the entire screen and be part of the navigation stack.

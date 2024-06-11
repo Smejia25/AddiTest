@@ -1,7 +1,7 @@
-// @ts-nocheck
-import { createDrawerNavigator } from "@react-navigation/drawer"
+import { createDrawerNavigator, DrawerScreenProps } from "@react-navigation/drawer"
 import { DarkTheme, DefaultTheme, NavigationContainer } from "@react-navigation/native"
 import { createNativeStackNavigator, NativeStackScreenProps } from "@react-navigation/native-stack"
+
 import { ILead } from "app/models"
 import * as Screens from "app/screens"
 import { colors } from "app/theme"
@@ -11,6 +11,8 @@ import { useColorScheme } from "react-native"
 
 export type AppStackParamList = {
   Root: { screen: "Prospects" | "leads" }
+  Leads: undefined
+  Prospects: undefined
   Settings: undefined
   LeadDetail: {
     lead: ILead
@@ -22,8 +24,13 @@ export type AppStackScreenProps<T extends keyof AppStackParamList> = NativeStack
   T
 >
 
+export type AppDrawerScreenProps<T extends keyof AppStackParamList> = DrawerScreenProps<
+  AppStackParamList,
+  T
+>
+
 const Stack = createNativeStackNavigator<AppStackParamList>()
-const Drawer = createDrawerNavigator()
+const Drawer = createDrawerNavigator<AppStackParamList>()
 
 const DrawerStack = observer(function DrawerStack() {
   return (

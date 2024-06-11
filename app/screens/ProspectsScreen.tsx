@@ -7,7 +7,7 @@ import { View, ViewStyle } from "react-native"
 import { colors } from "../theme"
 import { AppStackScreenProps } from "app/navigators"
 
-interface LeadsScreenProps extends AppStackScreenProps<"Root"> {}
+interface LeadsScreenProps extends AppStackScreenProps<"Prospects"> {}
 
 export const ProspectsScreen: FC<LeadsScreenProps> = observer(function ProspectsScreen() {
   const rootStore = useStores()

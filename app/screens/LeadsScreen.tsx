@@ -5,9 +5,9 @@ import { observer } from "mobx-react-lite"
 import React, { FC } from "react"
 import { View, ViewStyle } from "react-native"
 import { colors } from "../theme"
-import { AppStackScreenProps } from "app/navigators"
+import { AppDrawerScreenProps,  } from "app/navigators"
 
-interface LeadsScreenProps extends AppStackScreenProps<"Root"> {}
+interface LeadsScreenProps extends AppDrawerScreenProps<"Leads"> {}
 
 export const LeadsScreen: FC<LeadsScreenProps> = observer(function LeadsScreen({ navigation }) {
   const rootStore = useStores()
