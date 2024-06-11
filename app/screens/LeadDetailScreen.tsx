@@ -6,6 +6,7 @@ import { isProspect } from "app/utils/leads"
 import { observer } from "mobx-react-lite"
 import React, { FC } from "react"
 import { ImageStyle, Text, TextStyle, View, ViewStyle } from "react-native"
+import { ScrollView } from "react-native-gesture-handler"
 
 interface LeadDetailScreenProps extends AppStackScreenProps<"LeadDetail"> {}
 
@@ -30,7 +31,7 @@ export const LeadDetailScreen: FC<LeadDetailScreenProps> = observer(function Lea
   }
 
   return (
-    <View style={$root}>
+    <ScrollView style={$root}>
       <AutoImage
         source={{
           uri: lead.url,
@@ -86,7 +87,7 @@ export const LeadDetailScreen: FC<LeadDetailScreenProps> = observer(function Lea
           style={{ ...$button, ...$promoteButton }}
         />
       </View>
-    </View>
+    </ScrollView>
   )
 })
 
@@ -113,6 +114,7 @@ const $checksContainer: ViewStyle = {
   alignItems: "flex-start",
   gap: 15,
   paddingHorizontal: 30,
+  paddingBottom:20
 }
 
 const $checkButtonContainer: ViewStyle = {
